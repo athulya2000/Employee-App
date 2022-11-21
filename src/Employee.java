@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 class main{
@@ -56,6 +57,20 @@ public class Employee {
                 case 2:
                     System.out.println(empList);
                     break;
+
+                case 3:
+                    System.out.println("enter the employee code");
+                    int c=s.nextInt();
+                    if(empList.contains(c)) {
+                        System.out.println("Employee found");
+                        String sn=(String)empList.get(1);
+                        System.out.println(sn);
+                    }
+                    else {
+                        System.out.println(" Employee not found");
+                    }
+                    break;
+
 
 
 
