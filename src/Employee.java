@@ -52,6 +52,10 @@ public class Employee {
                     empList.add(cName);
                     empList.add(phNo);
                     empList.add(email);
+                    break;
+                case 2:
+                    System.out.println(empList);
+                    break;
 
 
 
