@@ -40,7 +40,7 @@ import java.util.Scanner;
                          System.out.println("Enter the employee designation");
                          String designation = s.next();
                          System.out.println("Enter the employee salary");
-                         double salary = s.nextDouble();
+                         double salary =s.nextDouble();
                          System.out.println("Enter the employee company name");
                          String companyName = s.next();
                          System.out.println("Enter the employee phone number");
@@ -83,6 +83,20 @@ import java.util.Scanner;
                          }
                          break;
                      case 4:
+                         System.out.println("Enter the employee code");
+                         int eCode=s.nextInt();
+                         for(EmployeeList ec:empList){
+                             if(eCode==ec.code){
+                                 empList.remove(ec);
+                                 break;
+                             }
+                         }
+                         break;
+                     case 5:
+                         System.exit(0);
+
+                     default:
+                         System.out.println("Choose valid option");
 
 
                  }
